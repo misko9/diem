@@ -43,8 +43,12 @@ mod txn_emitter;
 #[cfg(test)]
 mod upgrade;
 
-#[cfg(test)]
-mod smoke_test_environment;
+// #[cfg(test)]
+
+//////// 0L ////////
+// this needs to be callable in other test environments of third party testsuites
+pub mod smoke_test_environment;
+/////// end 0L ////////
 
 #[cfg(test)]
 mod test_utils;
